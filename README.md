@@ -1,74 +1,148 @@
 <html lang="el">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mantas Seafood</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taverna O Mantas</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            text-align: center;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: radial-gradient(circle, #003a66 0%, #001a33 100%);
+        color: white;
+        text-align: center;
+    }
 
-        header {
-            background: #003366;
-            color: white;
-            padding: 40px 20px;
-        }
+    /* Logo */
+    .logo-container {
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+    .logo-title {
+        font-size: 26px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    .logo-sub {
+        font-size: 18px;
+        margin-top: 4px;
+    }
+    .logo-line {
+        width: 140px;
+        height: 2px;
+        background-color: #ffffff;
+        margin: 12px auto 25px auto;
+        opacity: 0.85;
+    }
 
-        h1 {
-            margin: 0;
-            font-size: 36px;
-        }
+    /* Buttons */
+    .menu-button {
+        width: 85%;
+        background: #f2f8ff;
+        color: #001a33;
+        padding: 18px;
+        margin: 12px auto;
+        border-radius: 14px;
+        border: 1px solid #bcd4e8;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+        transition: transform 0.12s ease;
+    }
 
-        .container {
-            margin-top: 40px;
-        }
+    .menu-button:active {
+        transform: scale(0.97);
+    }
 
-        .btn {
-            display: block;
-            width: 80%;
-            max-width: 300px;
-            margin: 15px auto;
-            padding: 15px;
-            background: #0066cc;
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            border-radius: 8px;
-            transition: 0.2s;
-        }
+    /* Accordion */
+    details {
+        width: 85%;
+        margin: 12px auto;
+        background: #f2f8ff;
+        color: #001a33;
+        border-radius: 14px;
+        border: 1px solid #bcd4e8;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+        padding: 10px 16px;
+    }
 
-        .btn:hover {
-            background: #004c99;
-        }
+    summary {
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 10px 0;
+    }
 
-        footer {
-            margin-top: 50px;
-            padding: 20px;
-            color: #555;
-        }
-    </style>
+    .item {
+        text-align: left;
+        padding: 6px 0;
+        font-size: 17px;
+        border-bottom: 1px solid #d0d0d0;
+    }
+
+    .item:last-child {
+        border-bottom: none;
+    }
+
+    /* Language buttons */
+    .lang-container {
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .lang-btn {
+        display: inline-block;
+        background: #f2f8ff;
+        color: #001a33;
+        padding: 10px 18px;
+        margin: 0 6px;
+        border-radius: 14px;
+        border: 1px solid #bcd4e8;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+        transition: transform 0.12s ease;
+    }
+
+    .lang-btn:active {
+        transform: scale(0.97);
+    }
+
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>Mantas Seafood</h1>
-    <p>Fresh • Local • Authentic</p>
-</header>
+    <!-- LOGO -->
+    <div class="logo-container">
+        <div class="logo-title">TAVERNA O MANTAS</div>
+        <div class="logo-sub">ΤΑΒΕΡΝΑ Ο ΜΑΝΤΑΣ</div>
+        <div class="logo-line"></div>
+    </div>
 
-<div class="container">
-    <a class="btn" href="https://maps.app.goo.gl/8zW8q8xJt8u3gYpF8" target="_blank">📍 Βρες μας στο Google Maps</a>
-    <a class="btn" href="https://g.page/r/Cb8ZxZx0g8ZDEBM/review" target="_blank">⭐ Άφησε Κριτική</a>
-    <a class="btn" href="menu.pdf" target="_blank">📖 Δες το Μενού (PDF)</a>
-</div>
+    <!-- LANG -->
+    <div class="lang-container">
+        <div class="lang-btn">GR</div>
+        <div class="lang-btn">EN</div>
+    </div>
 
-<footer>
-    © 2024 Mantas Seafood
-</footer>
+    <!-- MAIN BUTTONS -->
+    <button class="menu-button">Google Review ⭐</button>
+    <button class="menu-button">Navigation 📍</button>
+
+    <!-- ACCORDION EXAMPLE -->
+    <details>
+        <summary>Ορεκτικά</summary>
+        <div class="item">Τζατζίκι</div>
+        <div class="item">Φέτα ψητή</div>
+        <div class="item">Πατάτες τηγανητές</div>
+    </details>
+
+    <details>
+        <summary>Θαλασσινά</summary>
+        <div class="item">Γαρίδες σαγανάκι</div>
+        <div class="item">Καλαμάρι τηγανητό</div>
+        <div class="item">Χταπόδι ψητό</div>
+    </details>
 
 </body>
 </html>
